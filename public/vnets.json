@@ -1,0 +1,61 @@
+{
+  "vnets": [
+    {
+      "id": "vnet-1",
+      "name": "VNet 1",
+      "region": "us-east-1",
+      "addressSpace": "10.0.0.0/16",
+      "subnets": [
+        {
+          "id": "subnet-1",
+          "name": "Subnet 1",
+          "addressPrefix": "10.0.1.0/24",
+          "networkInterfaces": [
+            {
+              "id": "nic-1",
+              "name": "Network Interface 1",
+              "privateIpAddress": "10.0.1.4",
+              "macAddress": "00:1A:2B:3C:4D:5E",
+              "isPublic": false
+            },
+            {
+              "id": "nic-2",
+              "name": "Network Interface 2",
+              "privateIpAddress": "10.0.1.5",
+              "macAddress": "00:1A:2B:3C:4D:5F",
+              "isPublic": false
+            }
+          ]
+        },
+        {
+          "id": "subnet-2",
+          "name": "Subnet 2",
+          "addressPrefix": "10.0.2.0/24",
+          "networkInterfaces": [
+            {
+              "id": "nic-2-1",
+              "name": "Network Interface 2-1",
+              "privateIpAddress": "10.0.2.4",
+              "macAddress": "00:1A:2B:3C:4D:60",
+              "isPublic": true
+            },
+            {
+              "id": "nic-2-2",
+              "name": "Network Interface 2-2",
+              "privateIpAddress": "10.0.2.5",
+              "macAddress": "00:1A:2B:3C:4D:61",
+              "isPublic": false
+            },
+            {
+              "id": "nic-2-3",
+              "name": "Network Interface 2-3",
+              "privateIpAddress": "10.0.2.6",
+              "macAddress": "00:1A:2B:3C:4D:62",
+              "isPublic": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
